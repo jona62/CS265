@@ -5,6 +5,7 @@ using namespace std;
 
 void menu_item();
 void systemCalls(int);
+bool isGood(int);
 
 int main(){
 	menu_item();
@@ -19,12 +20,19 @@ void menu_item() {
 		cout<<"3) List the contents of the current Directory\n";
 		cout<<"4) Exit\n";
 		cin>>choice;
+		if(!isGood) {
+			cout<<"Choice from the options above.\n";
+			continue;
+		}
 		cout<<"\n";
 		systemCalls(choice);
 
 	} while(choice != 4);
 }
 
+bool isGood(int choice) {
+	return (choice > 4 || choice < 0);
+}
 
 void systemCalls(int choice) {
 	switch(choice) {

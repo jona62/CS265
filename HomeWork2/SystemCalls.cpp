@@ -31,7 +31,7 @@ void menu_item() {
 }
 
 bool isGood(int choice) {
-	return (choice > 4 || choice < 0);
+	return (choice <= 4 || choice >= 0);
 }
 
 void systemCalls(int choice) {

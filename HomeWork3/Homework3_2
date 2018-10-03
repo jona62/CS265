@@ -1,0 +1,10 @@
+#! /bin/bash
+
+input=10
+
+while [[ $input -gt 0 ]] ; do
+  echo "$input"
+  input=$input-1
+done
+
+echo "Blast Off"

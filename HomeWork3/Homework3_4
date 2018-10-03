@@ -1,0 +1,18 @@
+#! /bin/bash
+
+find_average() {
+  arr=("$@")
+  total=0
+  size=0
+  for i in "${arr[@]}"
+    do
+      let total=$total+$i
+      let size=$size+1
+    done
+    let average=$total/$size
+   echo $average
+}
+
+
+array=(2 2 2 2 2)
+find_average ${array[@]}

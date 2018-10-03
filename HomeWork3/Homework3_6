@@ -1,0 +1,10 @@
+#! /bin/bash
+
+read -p "Enter a filename: " fileName
+lineCount=0
+
+while read -r line  ;
+  do
+    let lineCount=$lineCount+1
+  done < "$fileName"
+echo $lineCount

@@ -1,0 +1,19 @@
+#! /bin/bash
+
+echo "Enter an operation in the form a (operand) b "
+echo "for operations (+ - * /)"
+
+true=1
+while [[ $true == 1 ]] ; do
+  read -p "Enter operation with space: " op1 operation op2
+
+  result=0
+
+  case $operation in
+    +) let result=$op1+$op2 ;;
+    -) let result=$op1-$op2 ;;
+    /) let result=$op1/$op2 ;;
+    *) let result=$op1*$op2 ;;
+  esac
+  echo "Answer = $result"
+done

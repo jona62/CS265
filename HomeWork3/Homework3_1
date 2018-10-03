@@ -1,0 +1,23 @@
+#! /bin/bash
+
+bash_calls() {
+  case $1 in
+    1) pwd ;;
+    2) echo $HOME ;;
+    3) ls -al ;;
+    4) exit 0 ;;
+  esac
+}
+
+# input = 0
+
+while [[ $input -ne 4 ]] ; do
+  echo "1) Display current directory."
+  echo "2) Display home directory."
+  echo "3) List items in current directory."
+  echo "4) Exit the menu."
+
+  read -p "Enter your choice: " input
+
+  bash_calls  $input
+done

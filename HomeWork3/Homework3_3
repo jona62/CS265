@@ -1,0 +1,16 @@
+#! /bin/bash
+
+find_max() {
+  max=$1
+  if [ $max -lt $2 ] ; then
+    let max=$2
+  fi
+  if [ $max -lt $3 ] ; then
+    let max=$3
+  fi
+  echo $max
+}
+
+read -p "Enter three integers: " int1 int2 int3
+
+find_max $int1 $int2 $int3

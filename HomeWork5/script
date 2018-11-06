@@ -1,0 +1,17 @@
+BEGIN {
+	FS=":"
+	printf ("Marine Parts R Us \nMain catalog\n")
+	printf ("Part-id name			          price\n")
+	printf ("==============================================\n")
+}
+
+{	 
+	printf ("%d\t %-20s\t%6.2f\n", $1, $2, $3)
+	count++ 
+}
+
+END {
+	printf ("=============================================\n")
+	printf ("Catalog has %d parts\n", count)
+}
+

@@ -1,0 +1,7 @@
+	.  	-> matches any character, except a new line
+	[a-z] 	-> matches any one character enclosed characters
+	* 	-> matches zero or more characters
+	? 	-> matches 
+	
+	
+	

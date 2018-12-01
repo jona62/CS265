@@ -1,0 +1,14 @@
+#1 - Matches Username
+egrep -i "^[A-Za-z0-9_-].\{3,16\}$" file_name
+
+#2 - Matches Hex Value
+egrep -i "^#[A-GI-Za-gi-z0-9]*$" text
+
+#3 - Matches an Email
+egrep -i  "[A-za-z0-9\-\.\_]\{3,\}\@.\{1,7\}\.\{3\}" text
+
+#4 - Matches a URL
+egrep -i "\bhttp://[A-Za-z0-9_.-~]*\$" text
+
+#5 - Matches an Ip-address
+egrep -i "([0-2][0-5]{2}).([0-2][0-5]{2}).([0-2][0-5]{2}).([0-2][0-5]{2})" text

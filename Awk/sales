@@ -1,0 +1,8 @@
+BEGIN {
+    dept[$2] += $3
+}
+
+END {
+    for (x in dept)
+        print x, dept[x]
+}

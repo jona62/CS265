@@ -1,0 +1,20 @@
+HardCoded [ Prints two fields delimited by a caret('^') instead of the usual OFS(Output Field Seperator) which is a space(' ')]
+	awk -v OFS='^' '{print $1, $2}' listOfNames.txt > file
+
+Loops through each line and changes the OFS(' ') into a caret('^')
+	awk -v OFS='^' '{for(i=1; i<=NF; i++)printf("%s%s", $i,(i==NF)?ORS:OFS)}' listOfAddresses.txt > file
+
+
+Merges these files as one
+paste -d '|' listOfUserIds.txt listOfNames.txt listOfEmails.txt listOfAddresses.txt |  awk -f formatFiles.awk > Students.txt
+sed -i -e 's/|/ /g' Students.txt
+
+Another Alternative
+Modifies the files using sed
+Replaces the spaces with a caret ^
+
+sed -i 's/ /^/g' listOf* 
+
+Merges the files into one file
+
+paste -d " " listOfUserIds.txt listOfNames.txt listOfEmails.txt listOfAddresses.txt > file 

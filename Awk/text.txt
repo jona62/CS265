@@ -1,0 +1,6 @@
+Tom     Jones       4424        5/12/66         543354
+Mary    Adams       5346        11/4/54         28765
+
+awk '{print NR, $0}' text.txt  - Prints all the rows and their row number
+awk '{print $1, $2, $5, $0}' text.txt
+awk -F: '/Jones/ {print $1, $2}' text.txt

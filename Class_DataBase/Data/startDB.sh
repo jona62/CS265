@@ -2,7 +2,3 @@ paste -d '|' listOfUserIds.txt listOfNames.txt listOfEmails.txt listOfAddresses.
 sed -i -e 's/|/ /g' Students.txt
 
 cp Students.txt ../
-gcc -o StudentDatabase ../database.c
-../StudentDatabase
-
-rm StudentDatabase

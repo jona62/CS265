@@ -115,7 +115,7 @@ char *formatName(char text[]) {
 char *demangleName(char text[]) {
     char *result;
     int size = strlen(text);
-    result = malloc (sizeof(char) * size);
+    result = malloc (size);
     int i, j=0;
     for(i=0; i < size; i++) {
         if(text[i] == '^') {

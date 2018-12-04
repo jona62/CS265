@@ -32,7 +32,7 @@ void overwriteFile(struct Student *);
 void formatStudent(struct Student *);
 void updateStudent(struct Student *);
 void deleteStudent(struct Student *);
-void printStudentInfo(struct Student);
+void printStudentInfo(struct Student *);
 int searchStudents(struct Student *);
 void viewAllStudents(struct Student *);
 void updateStudentStructure(struct Student *);
@@ -78,11 +78,11 @@ void swap(struct Student *stu1, struct Student *stu2) {
     *stu2 = temp;
 }
 
-void printStudentInfo(struct Student student) {
-    printf("Id: \t\t%s\n", student.id);
-    printf("Name: \t\t%s\n", student.name);
-    printf("Email: \t\t%s\n", student.email);
-    printf("Address: \t%s\n", student.address);
+void printStudentInfo(struct Student *student) {
+    printf("Id: \t\t%s\n", student->id);
+    printf("Name: \t\t%s\n", student->name);
+    printf("Email: \t\t%s\n", student->email);
+    printf("Address: \t%s\n", student->address);
     printf("\n%s\n", SEPERATOR);
 }
 
@@ -100,7 +100,7 @@ int countLines(const char fileName[]) {
 char *formatName(char text[]) {
     char *result;
     int size = strlen(text);
-    result = malloc (sizeof(char) * size);
+    result = malloc(size);
     int i, j=0;
     for(i=0; i < size; i++) {
         if(text[i] == ' ') {
@@ -225,7 +225,7 @@ void viewAllStudents(struct Student StudentList[]) {
     printf("There are %d students in the database", stCounter);
     printf("\n================== Students ==================\n");
     for(i = 0; i < stCounter; i++) {
-        printStudentInfo(StudentList[i]);
+        printStudentInfo(&StudentList[i]);
     }
   }
 }
@@ -236,8 +236,8 @@ int searchStudents(struct Student StudentList[]) {
     } else {
       char tmpId[9];
       int i=0;
-      int found = 0;
-      int isValid = 0;
+      int found = 0; // used as booleans
+      int isValid = 0; // used as booleans
       printf("Enter Student's Id: ");
       getchar();
       scanf("%s", tmpId);
@@ -248,7 +248,7 @@ int searchStudents(struct Student StudentList[]) {
             if(!strcmp(StudentList[i].id, tmpId)) {
               found = 1;
               printf("\n%s\n", SEPERATOR);
-              printStudentInfo(StudentList[i]);
+              printStudentInfo(&StudentList[i]);
               break;
             }
           }

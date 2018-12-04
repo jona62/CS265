@@ -318,7 +318,7 @@ void deleteStudent(struct Student StudentList[]) {
 void deleteStudentStructure(struct Student StudentList[], int indexOfFound) {
     int i = indexOfFound;
     for(; i < stCounter-1; i++) {
-        swap(&StudentList[i], &StudentList[i++]);
+        swap(&StudentList[i], &StudentList[i+1]);
     }
     strcpy(StudentList[i].id, nullStr);
     strcpy(StudentList[i].name, nullStr);

@@ -4,8 +4,8 @@ MEC10002 Pattie^Darsey barnett@hotmail.com 250^Hartford^Avenue,^Bellingham^MA^20
 MEC10003 Cammie^Knoles sbmrjbr@sbcglobal.net 700^Oak^Street,^Brockton^MA^2301
 MEC10004 Evia^Fallen mastinfo@sbcglobal.net 66-4^Parkhurst^Rd,^Chelmsford^MA^1824
 MEC10005 Soo^Sanfilippo carcus@aol.com 591^Memorial^Dr,^Chicopee^MA^1020
-MEC10006 Hung^Felmlee bebing@gmail.com 55^Brooksby^Village^Way,^Danvers^MA^1923Q	
-MEC10007 Nick^Venema eminence@att.net 137^Teaticket^Hwy,^East^Falmouth^MA^2536	
+MEC10006 Hung^Felmlee bebing@gmail.com 55^Brooksby^Village^Way,^Danvers^MA^1923
+MEC10007 Nick^Venema eminence@att.net 137^Teaticket^Hwy,^East^Falmouth^MA^2536
 MEC10008 Arminda^Brubaker shrapnull@gmail.com 42^Fairhaven^Commons^Way,^Fairhaven^MA^2719
 MEC10009 Nicki^Ullman storerm@msn.com 374^William^S^Canning^Blvd,^Fall^River^MA^2721
 MEC10010 Mathew^Lim mddallara@mac.com 121^Worcester^Rd,^Framingham^MA^1701
@@ -16,7 +16,7 @@ MEC10014 Dirk^Brignac corrada@sbcglobal.net 1775^Washington^St,^Hanover^MA^2339
 MEC10015 Maisha^Couchman geekgrl@me.com 280^Washington^Street,^Hudson^MA^1749
 MEC10016 Ileen^Books cremonini@mac.com 20^Soojian^Dr,^Leicester^MA^1524
 MEC10017 Val^Wince sartak@live.com 11^Jungle^Road,^Leominster^MA^1453
-MEC10018 Louis^Macleod jpflip@icloud.com 301^Massachusetts^Ave,^Lunenburg^MA^1462q
+MEC10018 Louis^Macleod jpflip@icloud.com 301^Massachusetts^Ave,^Lunenburg^MA^1462
 MEC10019 Porter^Ethier iamcal@outlook.com 780^Lynnway,^Lynn^MA^1905
 MEC10020 Vernell^Teter wenzlaff@live.com 70^Pleasant^Valley^Street,^Methuen^MA^1844
 MEC10021 Eden^Weinmann reziac@yahoo.com 830^Curran^Memorial^Hwy,^North^Adams^MA^1247
